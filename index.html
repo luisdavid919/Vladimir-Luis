@@ -3,46 +3,72 @@
   <head>
     <meta charset="UTF-8">
     <title><h1>SURVEY FORM</h1></title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
   </head>
   
   <body>
 
-  <h1 id="title">SURVEY FORM</h1>
-  <p id="description">Let us know how we can improve freeCodeCamp</p>
+  <div id="container">
+  
+  <div id="logo">
+    <img src="https://pathwright.imgix.net/https%3A%2F%2Fcdn.filestackcontent.com%2Fapi%2Ffile%2FhFM023QFSSVrsK4ZUCZd%3Fsignature%3D888b9ea3eb997a4d59215bfbe2983c636df3c7da0ff8c6f85811ff74c8982e34%26policy%3DeyJjYWxsIjogWyJyZWFkIiwgInN0YXQiLCAiY29udmVydCJdLCAiZXhwaXJ5IjogNDYyMDM3NzAzMX0%253D?fit=crop&ixlib=python-1.1.0&w=500&s=2c2c850301ed2185fd4227f759f77483">
+    <h1 id="title">SURVEY FORM</h1>
+  </div>
+
+  <p id="description">Microverse Collab</p>
 
     <form action="" id="survey-form">
-    
-      <label for="name" id="name-label">Name:</label>
-      <input type="text" id="name" placeholder="Type your name in here.." required >
-
-      <label for="email" id="email-label">Email:</label>
-      <input type="email" id="email"  placeholder="Insert your email here" required>
-
-      <label for="number" id="number-label">Number:</label>
-      <input type="number" name="number" id="number" min="0" max="100"  placeholder="Enter your age" required>
       
-      <select name="gender" size="3" id="dropdown">
-          <option value="female">Female</option>
-          <option value="male">Male:</option>
-          <option value="geek">Female</option>
-      </select>
 
-      <input type="radio" name="1" value="0"> One
-      <input type="radio" name="1" value="0"> 1
-      <input type="radio" name="2" value="0"> Two
-      <input type="radio" name="2" value="0"> 2
-      <input type="radio" name="3" value="0"> Three
-      <input type="radio" name="3" value="0"> 3
+      <div class="name">
+        <label for="name" id="name-label">Name:</label>
+        <input type="text" id="name" placeholder="Type your name in here.." required >
+      </div>
 
-      <input type="checkbox" value="green"> Green
-      <input type="checkbox" value="red"> Red
-      <input type="checkbox" value="blue"> Blue
-      <textarea name="" id="" cols="30" rows="10">Comments Here:</textarea>
-      <button type="submit" id="submit" value="Submit">
+      <div class="email">
+        <label for="email" id="email-label">Email:</label>
+        <input type="email" id="email"  placeholder="Insert your email here" required>
+      </div>
+
+      <div class="number">
+        <label for="number" id="number-label">Number:</label>
+        <input type="number" name="number" id="number" min="0" max="100"  placeholder="Enter your age" required>
+      </div>
+
+      <div class="dropdown">
+        <label for="dropdown" id="gender-label">Select your gender:</label>
+        <select name="gender" size="3" id="dropdown">
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+            <option value="geek">Geek</option>
+        </select>
+      </div>
+
+      <div class="radio">
+        <label for="radio" id="radio-label">Choose something:</label>
+        <input type="radio" name="int" value="0"> 123
+        <input type="radio" name="int" value="0"> 456
+        <input type="radio" name="string" value="0"> "hello"
+        <input type="radio" name="string" value="0"> "world"
+        <input type="radio" name="float" value="0"> 2.46
+        <input type="radio" name="float" value="0"> 3.14
+      </div>
+
+      <div class="checkbox">
+        <label for="checkbox" id="checkbox-label">Select a color:</label>
+        <input type="checkbox" value="green"> Green
+        <input type="checkbox" value="red"> Red
+        <input type="checkbox" value="blue"> Blue        
+      </div>
+
+      <textarea name="" id="" cols="30" rows="10">Comments Here:</textarea><br>
+      <button type="submit" style="margin-bottom: 10px" class="button" id="submit" value="Submit">Submit</button>
 
     </form>
-    <script src="js/index.js"></script>
+  </div>
+
+  <script src="js/index.js"></script>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>
