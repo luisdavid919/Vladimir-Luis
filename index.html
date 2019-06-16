@@ -14,14 +14,21 @@
   <p id="description">Let us know how we can improve freeCodeCamp</p>
 
     <form action="" id="survey-form">
-      <label for="name">Name:</label>
-      <input type="text" id="name">
+    
+      <label for="name" id="name-label">Name:</label>
+      <input type="text" id="name" placeholder="Type your name in here.." required >
 
-      <label for="email">Email:</label>
-      <input type="email" id="email">
+      <label for="email" id="email-label">Email:</label>
+      <input type="email" id="email"  placeholder="Insert your email here" required>
 
-      <label for="number">Number:</label>
-      <input type="number" name="number" id="number" required>
+      <label for="number" id="number-label">Number:</label>
+      <input type="number" name="number" id="number" min="0" max="100"  placeholder="Enter your age" required>
+      
+      <select name="gender" size="3">
+          <option value="female">Female</option>
+          <option value="male">Male:</option>
+          <option value="geek">Fiat</option>
+        </select>
 
     </form>
     <script src="js/index.js"></script>
